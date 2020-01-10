@@ -9,6 +9,7 @@ parser.add_argument('words', metavar='N', type=str, nargs='+',
                     help='words for the accumulator')
 
 
+args = parser.parse_args()
 if __name__ == "__main__":
     translator = Translator(args.source, args.target, src_lang_size=10000, target_lang_size=10000)
     words_fr = args.words
